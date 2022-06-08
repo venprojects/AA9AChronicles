@@ -37,7 +37,8 @@ define gui.about = _p("""
 ## постройке дистрибутивов. Оно должно содержать текст формата ASCII и не должно
 ## содержать пробелы, двоеточия и точки с запятой.
 
-define build.name = "AA9AChronicles"
+define build.name = "AA9Chronicles"
+define build.directory_name = "out"
 
 
 ## Звуки и музыка ##############################################################
@@ -121,7 +122,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## в то время как любая другая цифра — это количество символов, печатаемых в
 ## секунду.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 30
 
 
 ## Стандартная задержка авточтения. Большие значения означают долгие ожидания, а

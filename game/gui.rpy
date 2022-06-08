@@ -59,7 +59,7 @@ define gui.interface_text_color = u'#ffffff'
 define gui.text_font = "gui/font/CaviarDreams.ttf"
 
 ## Шрифт, используемый именами персонажей.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "gui/font/CaviarDreams.ttf"
 
 ## Шрифт, используемый текстом вне игры.
 define gui.interface_text_font = "gui/font/CaviarDreams.ttf"
@@ -68,7 +68,7 @@ define gui.interface_text_font = "gui/font/CaviarDreams.ttf"
 define gui.text_size = 33
 
 ## Размер имён персонажей.
-define gui.name_text_size = 45
+define gui.name_text_size = 35
 
 ## Размер текста в пользовательском интерфейсе.
 define gui.interface_text_size = 33
@@ -99,24 +99,24 @@ define gui.textbox_height = 278
 
 ## Местоположение текстового окна по вертикали экрана. 0.0 — верх, 0.5 — центр и
 ## 1.0 — низ.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 0.96
 
 
 ## Местоположение имени говорящего персонажа по отношению к текстовому окну.
 ## Это могут быть целые значения в пикселях слева и сверху от начала окна или
 ## процентное отношение, например, 0.5 для центрирования.
 define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_ypos = -56
 
 ## Горизонтальное выравнивание имени персонажа. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
 ## выравнивания.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0.5
 
 ## Ширина, высота и границы окна, содержащего имя персонажа или None, для
 ## автоматической размерки.
-define gui.namebox_width = None
-define gui.namebox_height = None
+define gui.namebox_width = 256
+define gui.namebox_height = 48
 
 ## Границы окна, содержащего имя персонажа слева, сверху, справа и снизу по
 ## порядку.
@@ -131,7 +131,7 @@ define gui.namebox_tile = False
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
 define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 75
+define gui.dialogue_ypos = 40
 
 ## Максимальная ширина текста диалога в пикселях.
 define gui.dialogue_width = 1116
