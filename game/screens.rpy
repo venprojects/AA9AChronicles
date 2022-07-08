@@ -245,18 +245,15 @@ screen quick_menu():
     ## Гарантирует, что оно появляется поверх других экранов.
     zorder 100
 
-    if quick_menu:
+    if quick_menu and not renpy.get_screen("cases_screen"):
 
         hbox:
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.95
 
-            textbutton _("Назад") action Rollback()
             textbutton _("История") action ShowMenu('history')
-            textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Авто") action Preference("auto-forward", "toggle")
             textbutton _("Сохранить") action ShowMenu('save')
             textbutton _("Б.Сохр") action QuickSave()
             textbutton _("Б.Загр") action QuickLoad()
